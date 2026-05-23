@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>গোপনীয়তার নীতি ও শর্তাবলী - চিতোষী সেবা</title>
+    <link href="https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        :root { --primary: #32a852; --dark: #2c3e50; --light-bg: #f8fafc; --text: #334155; }
+        * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Hind Siliguri', sans-serif; }
+        body { background-color: var(--light-bg); color: var(--text); line-height: 1.8; padding-bottom: 40px; }
+
+        /* হেডার */
+        .header { background: var(--primary); color: white; text-align: center; padding: 30px 20px; box-shadow: 0 4px 12px rgba(0,0,0,0.05); }
+        .header h1 { font-size: 24px; font-weight: 700; margin-bottom: 8px; }
+        .header p { font-size: 14px; opacity: 0.9; }
+
+        /* ট্যাব বাটন */
+        .tab-container { display: flex; justify-content: center; gap: 10px; margin: 25px auto; max-width: 500px; padding: 0 15px; }
+        .tab-btn { flex: 1; background: #fff; border: 1.5px solid #e2e8f0; padding: 12px; border-radius: 12px; font-weight: 600; font-size: 15px; color: var(--dark); cursor: pointer; transition: all 0.2s; display: flex; align-items: center; justify-content: center; gap: 8px; }
+        .tab-btn.active { background: var(--primary); color: white; border-color: var(--primary); box-shadow: 0 4px 12px rgba(50, 168, 82, 0.2); }
+
+        /* মেইন কন্টেন্ট */
+        .content-container { max-width: 700px; margin: 0 auto; padding: 0 15px; }
+        .content-card { background: #fff; padding: 25px; border-radius: 16px; border: 1px solid #e2e8f0; box-shadow: 0 4px 10px rgba(0,0,0,0.02); display: none; }
+        .content-card.active { display: block; animation: fadeIn 0.3s ease; }
+
+        @keyframes fadeIn { from { opacity: 0; transform: translateY(10px); } to { opacity: 1; transform: translateY(0); } }
+
+        h2 { color: var(--dark); font-size: 18px; margin: 20px 0 10px 0; display: flex; align-items: center; gap: 8px; border-bottom: 1px solid #f1f5f9; padding-bottom: 6px; }
+        h2 i { color: var(--primary); font-size: 16px; }
+        p { font-size: 15px; text-align: justify; margin-bottom: 12px; color: #475569; }
+        ul { margin-left: 20px; margin-bottom: 15px; }
+        li { font-size: 15px; margin-bottom: 6px; color: #475569; }
+
+        /* ফুটার নোট */
+        .footer-note { text-align: center; margin-top: 30px; font-size: 13px; color: #94a3b8; }
+        .footer-note a { color: var(--primary); text-decoration: none; font-weight: 600; }
+    </style>
+</head>
+<body>
+
+    <header class="header">
+        <h1 id="siteTitle">চিতোষী সেবা</h1>
+        <p>সেবা নিন সেবা দিন পোর্টালে আপনাকে স্বাগতম</p>
+    </header>
+
+    <div class="tab-container">
+        <button class="tab-btn active" onclick="switchTab('privacy', this)"><i class="fas fa-user-shield"></i> গোপনীয়তার নীতি</button>
+        <button class="tab-btn" onclick="switchTab('terms', this)"><i class="fas fa-file-contract"></i> ব্যবহারের শর্তাবলী</button>
+    </div>
+
+    <main class="content-container">
+        
+        <div id="privacy" class="content-card active">
+            <p style="font-weight: 600; color: var(--dark);"><i class="far fa-clock"></i> সর্বশেষ আপডেট: মে ২০২৬</p>
+            <p>'সেবা নিন সেবা দিন' (চিতোষী সেবা) পোর্টালে আপনার গোপনীয়তার সুরক্ষা আমাদের কাছে অত্যন্ত গুরুত্বপূর্ণ। আমাদের প্ল্যাটফর্মটি ব্যবহার করার সময় আপনার কোন কোন তথ্য সংগ্রহ করা হয় এবং তা কীভাবে ব্যবহার করা হয়, তা নিচে স্পষ্ট করা হলো:</p>
+            
+            <h2><i class="fas fa-database"></i> ক) তথ্য সংগ্রহ ও ব্যবহার</h2>
+            <ul>
+                <li><strong>ব্যক্তিগত তথ্য:</strong> আপনি যখন আমাদের প্ল্যাটফর্মে রক্তদাতা হিসেবে বা সাধারণ ব্যবহারকারী হিসেবে নিবন্ধন (Registration) করেন, তখন আমরা আপনার নাম, ফোন নম্বর, রক্তের গ্রুপ এবং ঠিকানা সংগ্রহ করি।</li>
+                <li><strong>পোস্ট ও কন্টেন্ট:</strong> ব্যবহারকারী নিজেই যখন কোনো সামাজিক, শিক্ষা বা মানবিক পোস্ট করেন, তখন তার নাম এবং ছবি পোস্টের সাথে প্রদর্শিত হয়।</li>
+            </ul>
+
+            <h2><i class="fas fa-eye"></i> খ) তথ্যের নিরাপত্তা ও প্রকাশ</h2>
+            <ul>
+                <li><strong>রক্তদান ও জরুরি সেবা:</strong> রক্তদাতার নাম, রক্তের গ্রুপ এবং ফোন নম্বর সর্বসাধারণের জন্য উন্মুক্ত থাকে, যাতে জরুরি প্রয়োজনে যে কেউ সরাসরি যোগাযোগ করতে পারে।</li>
+                <li><strong>সুরক্ষা:</strong> আমরা আপনার ব্যক্তিগত তথ্য কোনো বাণিজ্যিক উদ্দেশ্যে তৃতীয় পক্ষের কাছে বিক্রি বা শেয়ার করি না। তবে সরকারি আইন বা আইনি বাধ্যবাধকতার প্রয়োজনে তথ্য প্রকাশ করা হতে পারে।</li>
+            </ul>
+
+                    </div>
+
+        <div id="terms" class="content-card">
+            <p style="font-weight: 600; color: var(--dark);"><i class="far fa-clock"></i> সর্বশেষ আপডেট: মে ২০২৬</p>
+            <p>এই প্ল্যাটফর্মটি ব্যবহার করার মাধ্যমে আপনি নিম্নলিখিত শর্তাবলী মেনে নিতে সম্মতি প্রকাশ করছেন। যদি আপনি এই শর্তাবলীতে একমত না হন, তবে অনুগ্রহ করে সেবাটি ব্যবহার করা থেকে বিরত থাকুন।</p>
+
+            <h2><i class="fas fa-user-check"></i> ক) সঠিক তথ্য প্রদান</h2>
+            <p>প্ল্যাটফর্মে নিবন্ধন করার সময় অবশ্যই সঠিক নাম, সক্রিয় ফোন নম্বর এবং সঠিক রক্তের গ্রুপ প্রদান করতে হবে। কোনো প্রকার ভুয়া বা বিভ্রান্তিকর তথ্য প্রদান করা দণ্ডনীয় এবং এর ফলে আপনার অ্যাকাউন্ট বাতিল করা হতে পারে।</p>
+
+            <h2><i class="fas fa-exclamation-triangle"></i> খ) ব্যবহারের নিয়ম ও নিষেধাজ্ঞা</h2>
+            <ul>
+                <li><strong>পোস্টের শালীনতা:</strong> প্ল্যাটফর্মের পোস্ট বক্সে কোনো প্রকার রাজনৈতিক বিদ্বেষ, ধর্মীয় অনুভূতিতে আঘাত হানে এমন বক্তব্য, অশ্লীল লেখা বা ছবি এবং স্প্যাম (বিজ্ঞাপন বা ভুয়া লিঙ্ক) পোস্ট করা সম্পূর্ণ নিষিদ্ধ।</li>
+                <li><strong>অপব্যবহার:</strong> রক্তদাতাদের তালিকায় থাকা ফোন নম্বরে কোনো প্রকার অপ্রাসঙ্গিক বা বিরক্তিকর কল করা যাবে না। শুধুমাত্র জরুরি প্রয়োজনে বা রক্তের প্রয়োজনে এই তালিকা ব্যবহার করতে হবে।</li>
+            </ul>
+
+            <h2><i class="fas fa-shield-alt"></i> গ) দায়বদ্ধতা (Limitation of Liability)</h2>
+            <p>এই প্ল্যাটফর্মটি মূলত একটি তথ্য শেয়ারিং মাধ্যম। রক্তদাতার সাথে যোগাযোগ, রক্তের সত্যতা যাচাই এবং রক্তদানের সমস্ত প্রক্রিয়া সম্পূর্ণ ব্যবহারকারীর নিজস্ব দায়িত্বে সম্পন্ন করতে হবে। কোনো অনাকাঙ্ক্ষিত পরিস্থিতি বা ভুয়া তথ্যে এবং টাকা পয়সা লেনদেনের জন্য কর্তৃপক্ষ কোনোভাবেই দায়ী থাকবে না। এই প্ল্যাটফর্ম এর মাধ্যমে কেউ টাকা পয়সা লেন দেন করবেন না</p>
+
+            <h2><i class="fas fa-trash-alt"></i> ঘ) অ্যাকাউন্ট ও কন্টেন্ট বাতিলকরণ</h2>
+            <p>কোনো ব্যবহারকারী যদি শর্তাবলী লঙ্ঘন করেন বা ভুয়া তথ্য ছড়ান, তবে কর্তৃপক্ষ কোনো পূর্ব নোটিশ ছাড়াই তার পোস্ট মুছে ফেলার এবং তার অ্যাকাউন্ট চিরতরে নিষিদ্ধ করার পূর্ণ অধিকার সংরক্ষণ করে।</p>
+        </div>
+
+        <div class="footer-note">
+            &copy; 2026 <a href="#" id="footerBrand">Sofikul Islam</a>. সর্বস্বত্ব সংরক্ষিত।
+        </div>
+    </main>
+
+    <script>
+        // আপনার আগের মেইন ফাইলের মতোই ফায়ারবেস থেকে ডাইনামিকলি সাইটের নাম আপডেট হবে
+        const FIREBASE_SETTINGS_URL = "https://chitoshi-sheba-default-rtdb.firebaseio.com/settings.json";
+
+        window.onload = () => {
+            const cachedSettings = localStorage.getItem('cachedSettings');
+            if (cachedSettings) {
+                applyFooterSettings(JSON.parse(cachedSettings));
+            }
+            fetchSettings();
+        };
+
+        async function fetchSettings() {
+            try {
+                const res = await fetch(FIREBASE_SETTINGS_URL);
+                const settings = await res.json();
+                if(settings) {
+                    localStorage.setItem('cachedSettings', JSON.stringify(settings)); 
+                    applyFooterSettings(settings);
+                }
+            } catch(e){ console.log("Firebase fetch error:", e); }
+        }
+
+        function applyFooterSettings(settings) {
+            if(settings.siteName) {
+                document.getElementById('siteTitle').innerText = settings.siteName.trim();
+                document.title = "গোপনীয়তার নীতি ও শর্তাবলী - " + settings.siteName.trim();
+            }
+        }
+
+        // ট্যাব পরিবর্তনের ফাংশন
+        function switchTab(tabId, btn) {
+            document.querySelectorAll('.content-card').forEach(card => card.classList.remove('active'));
+            document.querySelectorAll('.tab-btn').forEach(button => button.classList.remove('active'));
+            
+            document.getElementById(tabId).classList.add('active');
+            btn.classList.add('active');
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        }
+    </script>
+</body>
+</html>
