@@ -349,7 +349,7 @@
             <input type="text" id="pImg" placeholder="ছবির লিঙ্ক (ঐচ্ছিক)" style="width:100%; padding:10px; margin-top:10px; border:1px solid #eee; border-radius:8px;">
             <div style="display:flex; gap:10px; margin-top:10px;">
                 <select id="pCat" style="flex:1; padding:10px; border-radius:8px; border:1px solid #eee;">
-                    <option value="শিক্ষা">শিক্ষা</option><option value="ইসলামিক">Islamic</option><option value="মানবিক">মানবিক</option><option value="প্রোডাক্ট">প্রোডাক্ট</option>
+                    <option value="শিক্ষা">শিক্ষা</option><option value="ইসলামিক">ইসলামিক</option><option value="মানবিক">মানবিক</option><option value="প্রোডাক্ট">প্রোডাক্ট</option>
                 </select>
                 <button id="submitPostBtn" onclick="addPost()" style="background:var(--fb); color:white; border:none; padding:10px 25px; border-radius:8px; font-weight:600; cursor:pointer;">পোস্ট করুন</button>
             </div>
@@ -426,7 +426,7 @@ onclick="openContactModal()" class="footer-link-node">যোগাযোগ</a>
 
     <script>
         const SCRIPT_URL = "https://script.google.com/macros/s/AKfycby2muYN-XMHMuY4qptdXELrfEn7tkGBmkygWv7Rn9NHJs9IjmdyQu7pzCTEV-QM1fT_aA/exec";
-        const FIREBASE_SETTINGS_URL = "https://chitoshi-sheba-default-rtdb.firebaseio.com/settings.json";
+        const FIREBASE_SETTINGS_URL = "";
         
         let user = JSON.parse(localStorage.getItem('sajarUser'));
         let allPosts = [];
