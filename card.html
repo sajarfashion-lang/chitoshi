@@ -3,186 +3,182 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>একলার প্রতিনিধি সাথে কথা বলতে কল করুন</title>
+    <title>দরুদ শরীফ সমূহ</title>
     <style>
-        /* বেসিক রিসেট ও গ্লোবাল স্টাইল */
-        * { box-sizing: border-box; margin: 0; padding: 0; }
-        body { 
-            font-family: 'Segoe UI', Arial, sans-serif; 
-            background: #f4f7f6; 
-            padding: 40px 20px; 
-            color: #333;
-        }
-        
-        /* হেডার স্টাইল */
-        .header { 
-            text-align: center; 
-            margin-bottom: 40px; 
-        }
-        .header h1 {
-            color: #1a73e8;
-            font-size: 2rem;
-            font-weight: 700;
-            position: relative;
-            display: inline-block;
-            padding-bottom: 10px;
-        }
-        .header h1::after {
-            content: '';
-            position: absolute;
-            bottom: 0;
-            left: 25%;
-            width: 50%;
-            height: 3px;
-            background: #28a745;
-            border-radius: 2px;
-        }
-        
-        /* কন্টেইনার গ্রিড */
-        .container { 
-            display: grid; 
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); 
-            gap: 25px; 
-            max-width: 1200px; 
-            margin: 0 auto; 
+        /* গ্লোবাল স্টাইল */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
         }
 
-        /* আকর্ষণীয় কার্ড ডিজাইন */
-        .card { 
-            background: #ffffff; 
-            border-radius: 16px; 
-            padding: 30px 20px; 
-            text-align: center; 
-            box-shadow: 0 10px 20px rgba(0,0,0,0.05); 
-            transition: all 0.3s ease;
-            border-top: 6px solid #28a745;
+        body {
+            background-color: #f4f7f6;
+            color: #333;
+            padding: 20px;
             display: flex;
             flex-direction: column;
-            justify-content: space-between;
             align-items: center;
         }
 
-        .card:hover { 
-            transform: translateY(-8px); 
-            box-shadow: 0 15px 30px rgba(0,0,0,0.12); 
+        /* হেডার স্টাইল */
+        header {
+            text-align: center;
+            margin-bottom: 30px;
+            padding: 10px;
         }
 
-        /* কার্ডের ভেতরের টেক্সট স্টাইল */
-        .card h3 { 
-            color: #2c3e50; 
-            margin-bottom: 8px; 
-            font-size: 22px; 
-            font-weight: 600;
-        }
-        
-        .card .designation { 
-            color: #7f8c8d; 
-            margin-bottom: 15px; 
-            font-size: 15px;
-            font-weight: 500;
-            background: #f8f9fa;
-            padding: 4px 12px;
-            border-radius: 20px;
+        header h1 {
+            color: #0f5132;
+            font-size: 2rem;
+            margin-bottom: 5px;
         }
 
-        .card .phone { 
-            color: #27ae60; 
-            margin-bottom: 25px; 
-            font-weight: 600; 
-            font-size: 18px;
-            letter-spacing: 0.5px;
+        header p {
+            color: #6c757d;
+            font-size: 1rem;
         }
 
-        /* আধুনিক কল বাটন */
-        .call-btn { 
-            display: inline-flex; 
-            align-items: center;
-            justify-content: center;
-            background: #28a745; 
-            color: #fff; 
-            text-decoration: none; 
-            padding: 12px 35px; 
-            border-radius: 50px; 
-            font-weight: bold; 
-            font-size: 16px;
-            transition: all 0.3s ease;
-            box-shadow: 0 4px 6px rgba(40, 167, 69, 0.2);
-            width: 80%;
+        /* মেইন কন্টেইনার */
+        .container {
+            width: 100%;
+            max-width: 800px;
+            display: grid;
+            gap: 20px;
         }
 
-        .call-btn:hover { 
-            background: #218838; 
-            box-shadow: 0 6px 12px rgba(40, 167, 69, 0.3);
-            transform: scale(1.03);
+        /* দরুদ কার্ড স্টাইল */
+        .durood-card {
+            background: #ffffff;
+            border-left: 5px solid #198754;
+            border-radius: 8px;
+            padding: 20px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
         }
-        
-        /* লোডিং স্পিনার */
-        #loading { 
-            text-align: center; 
-            font-size: 18px; 
-            color: #666; 
-            font-weight: 500;
-            margin-top: 50px;
+
+        .durood-card:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+        }
+
+        .durood-title {
+            color: #198754;
+            font-size: 1.25rem;
+            font-weight: bold;
+            margin-bottom: 15px;
+            border-bottom: 1px solid #dee2e6;
+            padding-bottom: 5px;
+        }
+
+        .arabic-text {
+            font-size: 1.6rem;
+            text-align: right;
+            direction: rtl;
+            margin-bottom: 15px;
+            color: #2b2b2b;
+            line-height: 1.8;
+            font-family: 'Traditional Arabic', 'Amiri', serif;
+        }
+
+        .pronunciation {
+            font-size: 1rem;
+            margin-bottom: 10px;
+            color: #495057;
+            line-height: 1.5;
+        }
+
+        .pronunciation strong, .meaning strong {
+            color: #0f5132;
+        }
+
+        .meaning {
+            font-size: 1rem;
+            color: #6c757d;
+            line-height: 1.5;
+        }
+
+        /* ফুটার স্টাইল */
+        footer {
+            margin-top: 5px;
+            padding: 20px;
+            text-align: center;
+            font-size: 0.9rem;
+            color: #6c757d;
+            width: 100%;
+        }
+
+        /* মোবাইল রেসপন্সিভনেস */
+        @media (max-width: 600px) {
+            body {
+                padding: 10px;
+            }
+            header h1 {
+                font-size: 1.6rem;
+            }
+            .arabic-text {
+                font-size: 1.4rem;
+            }
+            .durood-card {
+                padding: 15px;
+            }
         }
     </style>
 </head>
 <body>
 
-<div class="header">
-    <h1>গুরুত্বপূর্ণ এবং প্রয়োজনীয় </h1>
-</div>
+    <header>
+        <h1>দরুদ শরীফ সমূহ</h1>
+        <p>আরবি, উচ্চারণ এবং অর্থসহ</p>
+    </header>
 
-<div id="loading">অনুগ্রহ করে অপেক্ষা করুন, তথ্য লোড হচ্ছে...</div>
-<div class="container" id="card-container"></div>
+    <!-- দরুদ কার্ডগুলো এখানে লোড হবে -->
+    <div class="container" id="durood-container"></div>
 
-<script>
-    const sheetUrl = "https://docs.google.com/spreadsheets/d/e/2PACX-1vRsMEFdv-GlfpoS43HCgt_cuyWM6SivIru3mHTBHfVwhmWlg6wWdcVdA7mhWveAQl3c4tMVuzBpWQ4u/pub?output=csv";
+    <footer>
+        <p>&copy; 2026 Sofikul Islam. All rights reserved.</p>
+    </footer>
 
-    async function fetchSheetData() {
-        try {
-            const response = await fetch(sheetUrl);
-            const data = await response.text();
-            
-            // রিলিজ করা ডাটা সঠিকভাবে লাইন ব্রেক অনুযায়ী ভাগ করা
-            const rows = data.split(/\r?\n/).slice(1); 
-            
-            const container = document.getElementById('card-container');
-            const loading = document.getElementById('loading');
-            loading.style.display = 'none';
+    <script>
+        // দরুদ শরীফের ডাটাবেজ (এখানে আপনি আরও দরুদ যোগ করতে পারবেন)
+        const duroodData = [
+            {
+                title: "১. দরূদে ইব্রাহিম (নামাজের দরূদ)",
+                arabic: "اللَّهُمَّ صَلِّ عَلَى مُحَمَّدٍ وَعَلَى آلِ مُحَمَّدٍ كَمَا صَلَّيْتَ عَلَى إِبْرَاهِيمَ وَعَلَى آلِ إِبْرَاهِيمَ إِنَّكَ حَمِيدٌ مَجِيدٌ، اللَّهُمَّ بَارِكْ عَلَى مُحَمَّدٍ وَعَلَى آلِ مُحَمَّدٍ كَمَا بَارَكْتَ عَلَى إِبْرَاهِيمَ وَعَلَى آلِ إِبْرَاهِيمَ إِنَّكَ حَمِيدٌ مَجِيدٌ",
+                pronunciation: "<strong>উচ্চারণ:</strong> আল্লাহুম্মা সাল্লি আলা মুহাম্মাদিওঁ ওয়া আলা আলি মুহাম্মাদিন, কামা সাল্লাইতা আলা ইব্রাহিমা ওয়া আলা আলি ইব্রাহিমা ইন্নাকা হামিদুম মাজিদ। আল্লাহুম্মা বারিক আলা মুহাম্মাদিওঁ ওয়া আলা আলি মুহাম্মাদিন, কমা বারাকতা আলা ইব্রাহিমা ওয়া আলা আলি ইব্রাহিমা ইন্নাকা হামিদুম মাজিদ।",
+                meaning: "<strong>অর্থ:</strong> হে আল্লাহ! মুহাম্মদ (সাল্লাল্লাহু আলাইহি ওয়া সাল্লাম) ও তাঁর বংশধরদের ওপর রহমত বর্ষণ করুন, যেমনটি আপনি ইব্রাহিম ও তাঁর বংশধরদের ওপর রহমত বর্ষণ করেছিলেন। নিশ্চয়ই আপনি প্রশংসিত ও সম্মানিত। হে আল্লাহ! মুহাম্মদ (সাল্লাল্লাহু আলাইহি ওয়া সাল্লাম) ও তাঁর বংশধরদের ওপর বরকত নাজিল করুন, যেমনটি আপনি ইব্রাহিম ও তাঁর বংশধরদের ওপর বরকত নাজিল করেছিলেন। নিশ্চয়ই আপনি প্রশংসিত ও সম্মানিত।"
+            },
+            {
+                title: "২. সংক্ষিপ্ত দরূদ শরীফ",
+                arabic: "صَلَّى اللهُ عَلَيْهِ وَسَلَّمَ",
+                pronunciation: "<strong>উচ্চারণ:</strong> সাল্লাল্লাহু আলাইহি ওয়া সাল্লাম।",
+                meaning: "<strong>অর্থ:</strong> আল্লাহর শান্তি ও রহমত তাঁর (নবীজীর) ওপর বর্ষিত হোক।"
+            }
+        ];
 
-            rows.forEach(row => {
-                // কমা দিয়ে স্প্লিট করার ক্ষেত্রে সেফটি হ্যান্ডলিং
-                const columns = row.split(/,(?=(?:(?:[^"]*"){2})*[^"]*$)/);
-                if (columns.length >= 2) {
-                    const name = columns[0] ? columns[0].replace(/^"|"$/g, '').trim() : '';
-                    const design = columns[1] ? columns[1].replace(/^"|"$/g, '').trim() : '';
-                    const phone = columns[2] ? columns[2].replace(/^"|"$/g, '').trim() : '';
+        // ডাটাবেজ থেকে কার্ড তৈরি করার ফাংশন
+        function displayDurood() {
+            const container = document.getElementById('durood-container');
+            container.innerHTML = ''; // কন্টেইনার খালি করা
 
-                    if(name && phone) {
-                        const card = `
-                            <div class="card">
-                                <div>
-                                    <h3> ${name}</h3>
-                                    <div class="designation">${design}</div>
-                                </div>
-                                <div style="width: 100%;">
-                                    <p class="phone">📞 ${phone}</p>
-                                    <a href="tel:${phone}" class="call-btn">Call Now</a>
-                                </div>
-                            </div>
-                        `;
-                        container.innerHTML += card;
-                    }
-                }
+            duroodData.forEach(item => {
+                const card = document.createElement('div');
+                card.className = 'durood-card';
+
+                card.innerHTML = `
+                    <div class="durood-title">${item.title}</div>
+                    <div class="arabic-text">${item.arabic}</div>
+                    <div class="pronunciation">${item.pronunciation}</div>
+                    <div class="meaning">${item.meaning}</div>
+                `;
+
+                container.appendChild(card);
             });
-        } catch (error) {
-            console.error('Error fetching data:', error);
-            document.getElementById('loading').innerText = 'দুঃখিত! তথ্য লোড করতে সমস্যা হয়েছে। আবার চেষ্টা করুন।';
         }
-    }
 
-    fetchSheetData();
-</script>
-
+        // পেজ লোড হলে ফাংশনটি রান করবে
+        window.onload = displayDurood;
+    </script>
 </body>
 </html>
